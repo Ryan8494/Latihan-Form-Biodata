@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #BBC863;
+        }
+        .universal{
+            background-color: beige;
+            display: flex;
+            gap: 50px;
+            flex-direction:column;
+            align-items: center;
+            padding: 20px;
+            justify-content: center;
+            margin-top: 22px;
+        }
+        .kiri{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .column{
+            width: 190px;
+        }
+    </style>
+    <title>Input data mahasiswa</title>
+</head>
+<body>
+    <div class="universal">
+        <div class="kiri">
+            <h2>BiODATA FORM</h2><br>
+            <form>
+                <div class = "kolom">
+                    <label for="nim">NIM :</label>
+                    <input type="text" class="column" name="nim">
+                </div>
+
+                <div class = "kolom">
+                    <br><label for="nama">Nama :</label>
+                    <input type="text" class="column" name="nama">
+                </div>
+
+                <div class="jeniskelamin">
+                    <br><label for="jeniskelamin">Jenis Kelamin :</label>
+                    <input type ="radio" id="Laki laki" value="Laki laki">
+                    <label  for ="Laki laki">Laki laki</label>
+                    <input type ="radio" id="perempuan" value="perempuan">
+                    <label for ="perempuan">Perempuan</label>
+                </div>
+
+                <div class="kolom">
+                    <br><label for="tempat lahir">Pilih tempat lahir :</label>
+                    <select id="tempat lahir">
+                        <option value="Denpasar">Denpasar</option>
+                        <option value="Bangli">Bangli</option>
+                        <option value="Badung">Badung</option>
+                        <option value="Buleleng">Buleleng</option>
+                    </select><br>
+                </div>
+        
+                <br><label for="tanggal lahir">Tanggal Lahir : </label>
+                <input type="date" id="tanggal lahir"><br>
+        
+                <br><label for="alamat">Masukkan Alamat :</label>
+                <input type="text" class="column" id="alamat"><br>
+                
+                <br><label for="nohp">Masukkan No. HP :</label>
+                <input type="text" class="column" id="nohp"><br>
+        
+                <br><label for="email">Masukkan Email :</label>
+                <input type="text" class="column" id="email"><br>
+                <div class = "hobi">
+                    <br><label for="hobi"> Pilih Hobi :</label>
+                    <input type="checkbox" id="sepakbola" value="Sepakbola">
+                    <label for="sepakbola">Sepakbola</label>
+                    <input type="checkbox" id="voli" value="voli">
+                    <label for="voli">Voli</label>
+                    <input type="checkbox" id="renang">
+                    <label for="renang">Renang</label><br>
+                    <br> <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+        <b>TABEL</b>
+        <table border="1"; style="width: fit-content; height:fit-content; text-align: center; width: 100%;">
+            <tr>
+                <th>NIM</th>
+                <th>NAMA</th>
+                <th>GENDER</th>
+                <th>TEMPAT LAHIR</th>
+                <th>TANGGAL LAHIR</th>
+                <th>ALAMAT</th>
+                <th>NO HP</th>
+                <th>EMAIL</th>
+                <th>HOBI</th>
+            </tr>
+            <tr>
+                <td>240040031</td>
+                <td>Putu Ryan Raditya</td>
+                <td>Laki laki</td>
+                <td>Denpasar</td>
+                <td>21/03/2006</td>
+                <td>Jl Tukad Melangit No.23</td>
+                <td>089671641800</td>
+                <td>ryanraditya3535@gmail.com</td>
+                <td>Sepakbola</td>
+            </tr>
+            <tr>
+                <td>240040018</td>
+                <td>I Putu Adhiatman</td>
+                <td>Laki laki</td>
+                <td>Denpasar</td>
+                <td>12/04/2006</td>
+                <td>JL Ahmad Yani No. 47</td>
+                <td>089635263050</td>
+                <td>putuadhi33@gmail.com</td>
+                <td>Belajar</td>
+            </tr>
+            <tr>
+                <td>2400400100</td>
+                <td>I Made Kusuma Jaya Wardana</td>
+                <td>Laki laki</td>
+                <td>Denpasar</td>
+                <td>21/11/2006</td>
+                <td>JL Danau Toba No.28</td>
+                <td>081246737085</td>
+                <td>officialkusumajayayt@gmail.com</td>
+                <td>Belajar</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
